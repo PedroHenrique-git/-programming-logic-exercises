@@ -14,5 +14,9 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'no-restricted-syntax': 0,
+    'guard-for-in': 0,
+    eqeqeq: 0,
+    'no-self-compare': 0,
   },
 };
