@@ -18,5 +18,6 @@ module.exports = {
     'guard-for-in': 0,
     eqeqeq: 0,
     'no-self-compare': 0,
+    'import/prefer-default-export': 0,
   },
 };
