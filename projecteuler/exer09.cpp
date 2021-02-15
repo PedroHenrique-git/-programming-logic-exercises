@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
-bool isPrime(int number) {
+bool isPrime(int n) {
     int div = 0;
-    for(int i = 1; i <= number; i++) {
-        if(number % i == 0) {
+    for(int i = 1; i <= n; i++) {
+        if(n % i == 0) {
             div++;
         }
     }
@@ -15,11 +15,12 @@ bool isPrime(int number) {
     };
 }
 
-main() {
+int main() {
     int n = 100;
     bool b = isPrime(n);
 
     if(b) {
         cout<<"Primo";
-    }
+    }            
+    return 0;
 }
