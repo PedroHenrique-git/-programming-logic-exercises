@@ -9,22 +9,20 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 
 */
-export let a = 3;
-let b = 4;
-let c = 5;
-let soma = 0;
-while (true) {
-  if (a < b && b < c) {
-    // eslint-disable-next-line no-unused-expressions
-    const d = (a ** 2) + (b ** 2) == c ** 2;
-    soma = a + b + c;
-    if (d && soma == 1000) {
-      console.log(soma);
-      break;
-    } else {
-      a = b;
-      b = c;
-      c += 1;
-    }
+export let a = 1;
+let b = 2;
+let c = Math.sqrt(a * a + b * b);
+let sum = a + b + c;
+
+while (sum !== 1000) {
+  if (sum > 1000) {
+    a += 1;
+    b = a + 1;
+  } else {
+    b += 1;
   }
+  c = Math.sqrt(a * a + b * b);
+  sum = a + b + c;
 }
+console.log(a, b, c);
+console.log(a * b * c);
